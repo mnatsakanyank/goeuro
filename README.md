@@ -1,0 +1,2 @@
+# goeuro
+Go Euro challenge
