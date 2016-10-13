@@ -1,12 +1,9 @@
 buildscript {
-	ext {
-		springBootVersion = '1.4.1.RELEASE'
-	}
 	repositories {
 		mavenCentral()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
 	}
 }
 
@@ -36,6 +33,5 @@ dependencies {
     compile 'log4j:log4j:1.2.17'
 	compile 'net.sf.jopt-simple:jopt-simple:5.0.3'
 	compileOnly "org.projectlombok:lombok:1.16.10"
-	//testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile 'org.jukito:jukito:1.4.1'
 }
