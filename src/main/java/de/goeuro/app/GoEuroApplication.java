@@ -41,7 +41,7 @@ public class GoEuroApplication {
         OptionParser parser = new OptionParser();
         parser.accepts("city", "City to search").withRequiredArg().required().ofType(String.class);
         parser.accepts("path", "File path to store result").withRequiredArg().ofType(String.class);
-        parser.accepts("help", "Print help information");
+        parser.accepts("help", "Print help information").forHelp();
         return parser;
     }
 
